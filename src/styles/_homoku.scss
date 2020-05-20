@@ -1,0 +1,82 @@
+.homoku {
+  background-color: #fff;
+
+  &__wrapper {
+    margin: 20px auto;
+    width: 608px;
+  }
+}
+
+.number-player {
+  text-align: center;
+  font-size: 25px;
+  margin: 5px 0 0;
+}
+
+.homoku-cell {
+  width: 32px;
+  height: 32px;
+  border: 1px solid darkblue;
+  background-color: #eee;
+  transition: all 0.3s;
+  position: relative;
+  &:hover {
+    background-color: rgb(192, 153, 54);
+    cursor: pointer;
+  }
+  box-sizing: border-box;
+  &__wrapper {
+    width: 608px;
+    display: flex;
+  }
+}
+
+.no-hover__homoku {
+  background-color: rgb(230, 201, 127);
+}
+
+.chip {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.win__homoku {
+  width: 608px;
+  height: 609px;
+  background-color: rgb(230, 201, 127);
+  position: absolute;
+  top: 53px;
+  left: 50%;
+  transform: translate(-50%);
+  display: none;
+
+}
+
+.win__text-homoku {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 40px;
+}
+
+.back {
+  margin: 40px auto;
+  width: 200px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  transition: all 0.3s;
+  border-radius: 15px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: lightblue;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+  }
+}
